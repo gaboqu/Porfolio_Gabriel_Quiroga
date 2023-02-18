@@ -47,6 +47,10 @@
     ;
     border-radius: 0px;
   }
+
+  .bgbody{
+    background: #14172a;
+  }
   
   li {
     list-style: none;
@@ -212,7 +216,7 @@
   
   .experiencias {
     padding: 40px 0px;
-    background-color: #14172a;
+    background: #14172a;
     min-width: 100vw;
     margin: auto;
   }
@@ -234,8 +238,8 @@
   
   .educacion {
     background-color: #14172a;
-    margin-bottom: 50px;
-    margin-top: 30px;
+    padding-bottom: 50px;
+    padding-top: 30px;
   }
   
   .edu {
@@ -303,11 +307,16 @@
   
   
   /*  PROYECTOS  */
+
+  .pr {
+    background: #14172a;
+  }
   .proyectos{
     
     padding: 0px 0px;
     border-radius: 15px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
+    background:#14172a;
   }
   
   .proyectos__contenedor{
@@ -358,6 +367,11 @@
   } */
   
   /* FOOTER */
+
+  footer{
+    background: #14172a;
+    padding-top: 30px;
+  }
   
   footer p{
     text-align: center;
@@ -510,13 +524,14 @@
     background: #191c32;
     padding: 40px 40px;
     border-radius: 5px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     text-align: center;
     margin: auto;
   }
   
   .sk{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+    background: #14172a;
   }
   
   
