@@ -7,9 +7,13 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent {
+  miPorfolio:any;
   constructor(private datosPorfolio:PorfolioService){}
 
   ngOnInit(): void{
-    this.datosPorfolio.obtenerDatos();
+    this.datosPorfolio.obtenerDatos().subscribe(data =>{
+      console.log(data)
+      this.miPorfolio=data;
+    });
   }
 }
