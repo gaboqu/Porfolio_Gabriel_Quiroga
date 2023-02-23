@@ -12,9 +12,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './componentes/login/login.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { BaseComponent } from './componentes/base/base.component';
-
-import { RouterModule} from '@angular/router';
 import { NavComponent } from './componentes/nav/nav.component'
+ /* 
+ TODO: Importo el router para luego definir las vistas con los componetes que se veran */
+import { RouterModule} from '@angular/router';
+
+
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { NavComponent } from './componentes/nav/nav.component'
   imports: [
     BrowserModule,
     HttpClientModule,
+     /*  
+TODO: Importo el router y definos las vistas cada una con su path, la que no tiene path es la vista por defecto. En este caso es BaseComponent*/
+
     RouterModule.forRoot([
       {path: 'login', component: LoginComponent},
       {path: 'registro', component: RegistroComponent},
