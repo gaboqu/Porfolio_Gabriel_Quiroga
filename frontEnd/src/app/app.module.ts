@@ -11,6 +11,10 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './componentes/login/login.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
+import { BaseComponent } from './componentes/base/base.component';
+
+import { RouterModule} from '@angular/router';
+import { NavComponent } from './componentes/nav/nav.component'
 
 @NgModule({
   declarations: [
@@ -22,11 +26,20 @@ import { RegistroComponent } from './componentes/registro/registro.component';
     ProyectosComponent,
     FooterComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    BaseComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    RouterModule.forRoot([
+      {path: 'login', component: LoginComponent},
+      {path: 'registro', component: RegistroComponent},
+      {path: '', component: BaseComponent},
+    ]
+
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

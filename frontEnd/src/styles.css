@@ -490,6 +490,105 @@
     padding-bottom: 80px;
     background: #14172a;
   }
+
+  /*   REGISTRO   */
+
+  .anone a{
+    text-decoration: none;
+    margin: auto;
+  }
+
+
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  /* height: 100vh; */
+}
+
+.form {
+  background-color: #191c32;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(0, 5, 9, 0.2);
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.inputContainer {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 15px;
+  line-height: normal;
+  outline: none;
+}
+
+.inputContainer label{
+ margin-top: 9px;
+ margin-left: 16px;
+}
+
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+  color: #fff;
+}
+
+::placeholder {
+  color: transparent;
+}
+
+
+.label {
+  margin: auto;
+  padding: 0 5px;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  align-content: center; 
+}
+
+
+.submitBtn {
+  /* display: block; */
+  margin: auto;
+  padding: 15px 20px;
+  border: none;
+  background-color: #7478ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+.input:focus+.label {
+  opacity: 0;
+}
+
+.input:focus {
+  border: 2px solid #7478ff;
+}
+
+.input:not(:placeholder-shown)+.label {
+  visibility: hidden;
+}
   
   
   @media (max-width: 768px) {
