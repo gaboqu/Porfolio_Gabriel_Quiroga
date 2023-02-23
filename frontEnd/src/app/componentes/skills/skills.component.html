@@ -4,87 +4,16 @@
   
       <div class="skills">
   
-        <div class="skillbox">
+        <div *ngFor="let skills of skillsList" class="skillbox">
           <div class="item-sk">
-            <p>HTML</p>
+            <p>{{skills.sk}}</p>
             <p></p>
           </div>
           <div class="skill">
-            <div class="skill_level" style="width: 85%"></div>
-          </div>
-        </div>
-  
-        <div class="skillbox">
-          <div class="item-sk">
-            <p>CSS</p>
-            <p></p>
-          </div>
-          <div class="skill">
-            <div class="skill_level" style="width: 60%"></div>
-          </div>
-        </div>
-  
-        <div class="skillbox">
-          <div class="item-sk">
-            <p>JS</p>
-            <p></p>
-          </div>
-          <div class="skill">
-            <div class="skill_level" style="width: 50%"></div>
-          </div>
-        </div>
-  
-        <div class="skillbox">
-          <div class="item-sk">
-            <p>JAVA</p>
-            <p></p>
-          </div>
-          <div class="skill">
-            <div class="skill_level" style="width: 60%"></div>
-          </div>
-        </div>
-  
-        <div class="skillbox">
-          <div class="item-sk">
-            <p>SLAK</p>
-            <p></p>
-          </div>
-          <div class="skill">
-            <div class="skill_level" style="width: 80%"></div>
-          </div>
-        </div>
-  
-        <div class="skillbox">
-          <div class="item-sk">
-            <p>JIRA</p>
-            <p></p>
-          </div>
-          <div class="skill">
-            <div class="skill_level" style="width: 70%"></div>
-          </div>
-        </div>
-  
-        <div class="skillbox">
-          <div class="item-sk">
-            <p>TRABAJO EN EQUIPO</p>
-            <p></p>
-          </div>
-          <div class="skill">
-            <div class="skill_level" style="width: 100%"></div>
-          </div>
-        </div>
-  
-        <div class="skillbox">
-          <div class="item-sk">
-            <p>SCRUM</p>
-            <p></p>
-          </div>
-          <div class="skill">
-            <div class="skill_level" style="width: 70%"></div>
+            <div class="skill_level" [style.width]="skills.porcentaje"></div>
           </div>
         </div>
   
       </div>
-  
     </div>
   </section>

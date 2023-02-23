@@ -4,53 +4,15 @@
       <div class="proyectos">
         <div class="proyectos__contenedor">
   
-  
-          <div class="proyectos__items">
-            <a href="#" target="blank"><img src="img/ag_prog.png" alt="bastok proyecto web"></a>
+          <div *ngFor="let proyecto of proyectoList" class="proyectos__items">
+            <a href="#" target="blank"><img [src]="proyecto.img" alt="bastok proyecto web"></a>
             <h3 class="top20 down20">Porfolio Argentina Programa</h3>
             <h4>Tecnologías:</h4>
-            <p class="green">html - css - angular - java - springboot - js </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure deserunt libero quae commodi repellendus
-              eos explicabo cum
-              accusamus ab accusantium nostrum provident pariatur amet optio architecto voluptatibus doloremque,
-              quisquam atque.</p>
+            <p class="green">{{proyecto.tecnologias}}</p>
+            <p>{{proyecto.info}}</p>
           </div>
   
-          <div class="proyectos__items">
-            <a href="https://gaboqu.github.io/bastok/" target="blank"><img src="img/bst.png"
-                alt="bastok proyecto web"></a>
-            <h3 class="top20 down20">Bastok Contenidos</h3>
-            <h4>Tecnologías:</h4>
-            <p class="green">html - css - js </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure deserunt libero quae commodi repellendus
-              eos explicabo cum
-              accusamus ab accusantium nostrum provident pariatur atur amet optio architecto voluptatibus doloremque,
-              amet optio architecto voluptatibus doloremque, quisquam atque.</p>
-          </div>
-  
-          <div class="proyectos__items">
-            <a href="https://gaboqu.github.io/semillero-digital/" target="blank"><img src="img/semillero_dig.png"
-                alt="web semillero digital"></a>
-            <h3 class="top20 down20">Semillero digital</h3>
-            <h4>Tecnologías:</h4>
-            <p class="green">html - css </p>
-            <p>Proyecto creado para el desafío Coder Hack (de Coder House) luego de haber culminado el curso de
-              desarrollador web. Consistia en crear una web en 48hs desde el diseño a su ejecución. El propósito era
-              colaborar con el desarrollo de Semillero Digital, una academia digital social que brinda capacitaciones en
-              oficios digitales y mentoreo profesional, a jóvenes en situación de pobreza económica con el objetivo de
-              estimular su incersión en el mundo laboral digital.</p>
-          </div>
-  
-          <div class="proyectos__items">
-            <a href="https://astrofeminista.com.ar/" target="blank"><img src="img/astro_fem.png"
-                alt="web semillero digital"></a>
-            <h3 class="top20 down20">Astrofeminista</h3>
-            <h4>Tecnologías:</h4>
-            <p class="green">html - css - js - php</p>
-            <p>Proyecto web realizado para la marca astrofeminista, cuenta con una pagina donde aparecen todas las
-              seciones que van apareciendo al hacer scroll y tambíen una plataforma de elearning creada con wordpress.
-            </p>
-          </div>
+         
         </div>
       </div>
     </div>

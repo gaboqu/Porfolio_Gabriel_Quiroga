@@ -48,6 +48,65 @@
             "titulo":"Action Script 2",
             "institucion":"Escuela Da Vinci 2010",
             "info":"Desarrollo web, trabajando con HTML y CSS. Implementando prácticas de versionado de código con GIT, y preprocesador SASS. Conocimientos de como aplicar Bootstrap a tus proyectos, lo importante del SEO en tus desarrollos. Subir sitios a servidores e interacciones con este servicio.."
+        }],
+    "skills":[
+        {
+            "sk":"HTML",
+            "porcentaje":"90%"
+        },
+        {
+            "sk":"CSS",
+            "porcentaje":"70%"
+        },
+        {
+            "sk":"JS",
+            "porcentaje":"40%"
+        },
+        {
+            "sk":"JAVA",
+            "porcentaje":"50%"
+        },
+        {
+            "sk":"SLAK",
+            "porcentaje":"80%"
+        },
+        {
+            "sk":"JIRA",
+            "porcentaje":"70%"
+        },
+        {
+            "sk":"TRABAJO EN EQUIPO",
+            "porcentaje":"100%"
+        },
+        {
+            "sk":"SCRUM",
+            "porcentaje":"70%"
         }
-    ]
+    ],
+    "proyecto":[
+        {
+            "img":"assets/img/ag_prog.png",
+            "titulo":"Porfolio Argentina Programa",
+            "tecnologias":"html - css - angular - java - springboot - js",
+            "info":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure deserunt libero quae commodi repellendus eos explicabo cum accusamus ab accusantium nostrum provident pariatur amet optio architecto voluptatibus doloremque, quisquam atque."
+        },
+        {
+            "img":"assets/img/bst.png",
+            "titulo":"Bastok Contenidos",
+            "tecnologias":"html - css - js",
+            "info":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure deserunt libero quae commodi repellendus eos explicabo cum accusamus ab accusantium nostrum provident pariatur amet optio architecto voluptatibus doloremque, quisquam atque."
+        },
+        {
+            "img":"assets/img/semillero_dig.png",
+            "titulo":"Semillero digital",
+            "tecnologias":"html - css",
+            "info":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure deserunt libero quae commodi repellendus eos explicabo cum accusamus ab accusantium nostrum provident pariatur amet optio architecto voluptatibus doloremque, quisquam atque."
+        },
+        {
+            "img":"assets/img/astro_fem.png",
+            "titulo":"Astrofeminista",
+            "tecnologias":"html - css - js - php",
+            "info":"Proyecto web realizado para la marca astrofeminista, cuenta con una pagina donde aparecen todas las seciones que van apareciendo al hacer scroll y tambíen una plataforma de elearning creada con wordpress."
+        }]
+
 }
