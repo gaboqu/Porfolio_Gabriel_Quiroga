@@ -368,7 +368,16 @@ footer p{
   justify-content: center;
 }
 
-/* LOGIN */
+/* LOGIN
+
+.logo2{
+  margin: 0px;
+  margin-top: -15px;
+}
+
+.logo2 img {
+  max-width: 35px;
+}
 
  .contMain{
   position: absolute;
@@ -381,6 +390,7 @@ footer p{
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
   border-radius: 5px;
+  
 }
 
 .contMain h2{
@@ -392,7 +402,7 @@ footer p{
 
 .contMain .contUser{
   position: relative;
-}
+  }
 
 .contMain .contUser input{
   width: 100%;
@@ -421,22 +431,22 @@ footer p{
 .contMain .contUser input:valid ~ label{
   top: -20px;
   left: 0;
-  color: #03e9f4;
-  font-size: 12px;
+  color: #7478ff;
+  font-size: 16px;
 }
 
 .contMain form a{
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: #fff;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
   margin-top: 40px;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   background: #191c32;
   border-radius: 5px;
 }
@@ -452,16 +462,31 @@ footer p{
 .contMain a{
   position: relative;
   display: inline-block;
-  color: #03e9f4;
+  color: #fff;
   font-size: 14px;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+} */
+
+/* form {
+  font-family: sans-serif;
+} */
+.registrarse{
+  margin-top: 40px;
+  text-align: center;
 }
 
-form {
-  font-family: sans-serif;
+.registrarse a{
+  text-decoration: none;
+  color: #fff;
 }
+
+
+/*   SKILLS     */
+
 
 .skillbox{
   display: inline-block;
@@ -517,6 +542,101 @@ form {
 .sk{
   margin-bottom: 80px;
 }
+
+
+/*   REGISTRO   */
+
+
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  background-color: #191c32;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(0, 5, 9, 0.2);
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+  color: #fff;
+}
+
+::placeholder {
+  color: transparent;
+}
+
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.submitBtn {
+  display: block;
+  margin: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: #7478ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+.botones{
+  margin-bottom: 20px;
+}
+
+.input:focus+.label {
+  opacity: 0;
+}
+
+.input:focus {
+  border: 2px solid #7478ff;
+}
+
+.input:not(:placeholder-shown)+.label {
+  visibility: hidden;
+}
+
+/*   MEDIA QUERIES    */
+
 
 
 @media (max-width: 768px) {
@@ -620,15 +740,6 @@ form {
     /* align-items: center; */
   }
 
-  /* .experiencias .flex {
-    margin: 0px;
-    padding: 0px;
-    background-color: yellow;
-    align-items:flex-start ;
-    width: 100%;
-    margin: auto;
-    
-  } */
 
   .experiencias h1{
     width: 100%;
@@ -682,9 +793,10 @@ form {
   .typ{
     text-align: center;
   }
-  
-
 }
+
+
+
 
 @media (max-width: 400px) {
   .banner h1 {
