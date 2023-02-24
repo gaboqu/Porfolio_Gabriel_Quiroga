@@ -86,24 +86,28 @@
     "proyecto":[
         {
             "img":"assets/img/ag_prog.png",
+            "url":"",
             "titulo":"Porfolio Argentina Programa",
             "tecnologias":"html - css - angular - java - springboot - js",
             "info":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure deserunt libero quae commodi repellendus eos explicabo cum accusamus ab accusantium nostrum provident pariatur amet optio architecto voluptatibus doloremque, quisquam atque."
         },
         {
             "img":"assets/img/bst.png",
+            "url":"https://gaboqu.github.io/bastok/",
             "titulo":"Bastok Contenidos",
             "tecnologias":"html - css - js",
             "info":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure deserunt libero quae commodi repellendus eos explicabo cum accusamus ab accusantium nostrum provident pariatur amet optio architecto voluptatibus doloremque, quisquam atque."
         },
         {
             "img":"assets/img/semillero_dig.png",
+            "url":"https://gaboqu.github.io/semillero-digital/",
             "titulo":"Semillero digital",
             "tecnologias":"html - css",
-            "info":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure deserunt libero quae commodi repellendus eos explicabo cum accusamus ab accusantium nostrum provident pariatur amet optio architecto voluptatibus doloremque, quisquam atque."
+            "info":"Proyecto creado para el desafío Coder Hack (de Coder House) luego de haber culminado el curso de desarrollador web. Consistia en crear una web en 48hs desde el diseño a su ejecución. El propósito era colaborar con el desarrollo de Semillero Digital, una academia digital social que brinda capacitaciones en oficios digitales y mentoreo profesional, a jóvenes en situación de pobreza económica con el objetivo de estimular su incersión en el mundo laboral digital."
         },
         {
             "img":"assets/img/astro_fem.png",
+            "url":"https://astrofeminista.com.ar/",
             "titulo":"Astrofeminista",
             "tecnologias":"html - css - js - php",
             "info":"Proyecto web realizado para la marca astrofeminista, cuenta con una pagina donde aparecen todas las seciones que van apareciendo al hacer scroll y tambíen una plataforma de elearning creada con wordpress."
