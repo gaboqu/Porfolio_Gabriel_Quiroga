@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {NgxTypedJsModule} from 'ngx-typed-js';
+
+
 
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
@@ -12,10 +15,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './componentes/login/login.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { BaseComponent } from './componentes/base/base.component';
-import { NavComponent } from './componentes/nav/nav.component'
+import { NavComponent } from './componentes/nav/nav.component';
+
  /* 
  TODO: Importo el router para luego definir las vistas con los componetes que se veran */
 import { RouterModule} from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -34,15 +39,20 @@ import { RouterModule} from '@angular/router';
     NavComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     HttpClientModule,
+    NgxTypedJsModule,
+    ReactiveFormsModule,
+    
      /*  
 TODO: Importo el router y definos las vistas cada una con su path, la que no tiene path es la vista por defecto. En este caso es BaseComponent*/
 
     RouterModule.forRoot([
-      {path: 'login', component: LoginComponent},
+      
       {path: 'registro', component: RegistroComponent},
-      {path: '', component: BaseComponent},
+      {path: 'porfolio', component: BaseComponent},
+      {path: '', component: LoginComponent},
     ]
 
     )

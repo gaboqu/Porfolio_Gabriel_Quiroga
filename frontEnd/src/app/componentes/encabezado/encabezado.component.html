@@ -32,9 +32,24 @@
           <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div> -->
           <h3 class="abs">Hola soy <b>{{miPorfolio.acercaDe.name}}</b></h3>
           <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div>  -->
-          <h1 class="typ">
-            <span class=" typed"></span>
-          </h1>
+          <ngx-typed-js [strings]="['Full Stack <br> Developer jr ', 'Multimedia <br> Designer ']"
+           
+            [typeSpeed]="35"
+            [startDelay]="0"
+            [backSpeed]="25"
+            [smartBackspace]="true"
+            [shuffle]="false"
+            [backDelay]="2500"
+            [loop]="true"
+            [showCursor]="false"
+            [cursorChar]="'_'"
+            [contentType]="'html'"
+            >
+            <h1 class="typing  typ"></h1>
+          </ngx-typed-js>
+          <!-- <h1 class="typ">
+            <span class="typed"></span>
+          </h1> -->
           <!-- <div class="btn_edit abs"><img src="img/btn_editar.png" alt=""></div> -->
           <p class="pBanner">
             {{miPorfolio.acercaDe.info}}
@@ -42,4 +57,18 @@
         </div>
       </div>
     </section>
+    <!-- <script src="../../../assets/js/typed.js"></script> -->
+    <!-- <script src="../../../assets/js/main.js"></script> -->
+    <!-- <script>
+      let number = document.getElementById("number");
+      let counter = 0;
+      setInterval(() => {
+        if (counter == 25) {
+          clearInterval();
+        } else {
+          counter += 1;
+          number.innerHTML = counter + "%";
+        }
+      }, 10)
+    </script> -->
   </div>
