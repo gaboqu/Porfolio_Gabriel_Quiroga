@@ -13,7 +13,7 @@
             <li><a href="https://api.whatsapp.com/send?phone=3454013565" target="blank"><img src="assets/img/incon_wapp.png"
                   alt="" /></a></li>
             <li><a href="https://github.com/gaboqu" target="blank"><img src="assets/img/icon_git.png" alt="" /></a></li>
-            <li class="btn_login"><a href="login">login</a> </li>
+            <li class="btn_login"><a href="">login</a> </li>
           </ul>
         </div>
       </nav>
@@ -24,13 +24,14 @@
         <div class="foto">
           <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div> -->
           <img 
-            [src]="miPorfolio.acercaDe.image" 
+            [src]="persona.url_foto" 
             alt="Foto de perfil" 
           />
+          <!-- <img src="../../../assets/img/perfil_foto.png" alt=""> -->
         </div>
         <div class="acercaDe top20" id="con2">
           <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div> -->
-          <h3 class="abs">Hola soy <b>{{miPorfolio.acercaDe.name}}</b></h3>
+          <h3 class="abs">Hola soy <b>{{persona.nombre}}</b></h3>
           <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div>  -->
           <ngx-typed-js [strings]="['Full Stack <br> Developer jr ', 'Multimedia <br> Designer ']"
            
@@ -52,7 +53,7 @@
           </h1> -->
           <!-- <div class="btn_edit abs"><img src="img/btn_editar.png" alt=""></div> -->
           <p class="pBanner">
-            {{miPorfolio.acercaDe.info}}
+            {{persona.descripcion}}
           </p>
         </div>
       </div>

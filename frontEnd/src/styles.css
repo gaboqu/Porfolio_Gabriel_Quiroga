@@ -627,6 +627,7 @@
   
     .acercaDe{
       background:#14172a;
+      justify-content: left;
       padding: 20px;
       padding-top: 40px;
       width: 100%;

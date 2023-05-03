@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {NgxTypedJsModule} from 'ngx-typed-js';
+import { NgxTypedJsModule } from 'ngx-typed-js';
+
 
 
 
@@ -37,16 +38,19 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegistroComponent,
     BaseComponent,
     NavComponent
+    
   ],
   imports: [
     ReactiveFormsModule,
     BrowserModule,
-    HttpClientModule,
     NgxTypedJsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+  
     
-     /*  
-TODO: Importo el router y definos las vistas cada una con su path, la que no tiene path es la vista por defecto. En este caso es BaseComponent*/
+/*  
+TODO:Importo el router y definos las vistas cada una con su path, la que no tiene path es la vista por defecto. En este caso es BaseComponent
+*/
 
     RouterModule.forRoot([
       
