@@ -4,7 +4,7 @@
       <div class="proyectos">
         <div class="proyectos__contenedor">
   
-          <div *ngFor="let proyecto of proyectoList" class="proyectos__items">
+          <div *ngFor="let proyecto of proyectos" class="proyectos__items">
             <a href="{{proyecto.url}}" target="blank"><img [src]="proyecto.img" alt="bastok proyecto web"></a>
             <h3 class="top20 down20">{{proyecto.titulo}}</h3>
             <h4>Tecnologías:</h4>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProyService } from 'src/app/servicios/proy.service';
 // import { PorfolioService } from 'src/app/servicios/porfolio.service';
 
 @Component({
@@ -7,15 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent {
-  proyectoList:any;
+  
+   constructor(private proyService : ProyService){}
 
-//   constructor(private datosPorfolio:PorfolioService){}
+   proyectos : any;
+   
+   ngOnInit(): void{
+      this.proyService.proyec().subscribe((data)=> { 
+        this.proyectos = data;
+      });
+   }
 
-//   ngOnInit(): void{
-//     this.datosPorfolio.obtenerDatos().subscribe(data =>{
-// //      console.log(data)
-//       this.proyectoList=data.proyecto;
-//     })
-//   }
+
 
 }
