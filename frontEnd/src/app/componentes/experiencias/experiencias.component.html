@@ -1,23 +1,16 @@
 <section class="experiencias">
-
-    <div class="container">
-      <h1 class="down30">Experiencias</h1>
-      <div class=" flex wrp">
-  
-        <div *ngFor="let experiencia of experienciasList" class="card_exp abs">
-          <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div> -->
-          <img class="img_exp down20" [src]="experiencia.img" alt="">
-          <h2 class="">{{experiencia.empresa}}</h2>
-          <h4>{{experiencia.periodo}}</h4>
-          <p class="top10">
-            {{experiencia.tareas}}
-          </p>
-        </div>
-  
-        
-  
+  <div class="container">
+    <h1 class="down30">Experiencias</h1>
+    <div class="flex wrp">
+      <div *ngFor="let exp of exp" class="card_exp abs">
+        <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div> -->
+        <img class="img_exp down20" [src]="exp.url_logo_exp" alt="" />
+        <h2 class="">{{ exp.empresa }}</h2>
+        <h4>{{ exp.fechas_ing_egr }}</h4>
+        <p class="top10">
+          {{ exp.funciones }}
+        </p>
       </div>
-  
     </div>
-  
-  </section>
+  </div>
+</section>

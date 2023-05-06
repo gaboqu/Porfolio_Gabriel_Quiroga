@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-// import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { EduService } from 'src/app/servicios/edu.service';
+
 
 @Component({
   selector: 'app-educacion',
@@ -7,20 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent {
-  educacionList:any;
-//   constructor(private datosPorfolio:PorfolioService){}
-    
-//     ngOnInit(): void{
-//       this.datosPorfolio.obtenerDatos().subscribe(data =>{
-// //        console.log(data)
-//         this.educacionList=data.educacion;
-//       })
-//     }
+  constructor(private eduService: EduService) {}
 
+  edu: any;
+
+  ngOnInit(): void {
+    this.eduService.educa().subscribe((data) => {
+      this.edu = data;
+     
+    });
   }
-
-
-function ngOnInit() {
-  throw new Error('Function not implemented.');
 }
 

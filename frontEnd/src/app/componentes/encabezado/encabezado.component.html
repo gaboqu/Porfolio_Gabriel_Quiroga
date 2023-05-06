@@ -24,14 +24,14 @@
         <div class="foto">
           <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div> -->
           <img 
-            [src]="persona.url_foto" 
+            [src]="persona[0].url_foto" 
             alt="Foto de perfil" 
           />
           <!-- <img src="../../../assets/img/perfil_foto.png" alt=""> -->
         </div>
         <div class="acercaDe top20" id="con2">
           <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div> -->
-          <h3 class="abs">Hola soy <b>{{persona.nombre}}</b></h3>
+          <h3 class="abs">Hola soy <b>{{persona[0].nombre}}</b></h3>
           <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div>  -->
           <ngx-typed-js [strings]="['Full Stack <br> Developer jr ', 'Multimedia <br> Designer ']"
            
@@ -53,7 +53,7 @@
           </h1> -->
           <!-- <div class="btn_edit abs"><img src="img/btn_editar.png" alt=""></div> -->
           <p class="pBanner">
-            {{persona.descripcion}}
+            {{persona[0].descripcion}}
           </p>
         </div>
       </div>

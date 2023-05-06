@@ -4,13 +4,13 @@
   
       <h1 class="down30">Educación</h1>
   
-      <div *ngFor="let educacion of educacionList" class="edu down20">
-        <img [src]="educacion.img" alt="">
+      <div *ngFor="let edu of edu" class="edu down20">
+        <img [src]="edu.img" alt="">
         <div class="info">
-          <h3>{{educacion.titulo}}</h3>
-          <h4>{{educacion.institucion}}</h4>
+          <h3>{{edu.titulo}}</h3>
+          <h4>{{edu.institucion}}</h4>
   
-          <p>{{educacion.info}}</p>
+          <p>{{edu.info}}</p>
         </div>
       </div>
   

@@ -4,13 +4,13 @@
   
       <div class="skills">
   
-        <div *ngFor="let skills of skillsList" class="skillbox">
+        <div *ngFor="let skill of skills" class="skillbox">
           <div class="item-sk">
-            <p>{{skills.sk}}</p>
+            <p>{{skill.sk}}</p>
             <p></p>
           </div>
           <div class="skill">
-            <div class="skill_level" [style.width]="skills.porcentaje"></div>
+            <div class="skill_level" [style.width]="skill.porcentaje"></div>
           </div>
         </div>
   

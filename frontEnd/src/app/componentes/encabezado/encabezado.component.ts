@@ -9,9 +9,11 @@ import { PersonaService } from 'src/app/servicios/persona.service';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent{ 
-  persona: persona = new persona("", "", "", "","");
+  // persona: persona = new persona("", "", "", "","");
 
-  constructor(public personaService: PersonaService) { }
+  constructor(private personaService: PersonaService) { }
+
+  persona: any;
 
 
   // name:any; Esto iba
@@ -30,7 +32,12 @@ export class EncabezadoComponent{
 
   ngOnInit(): void{
 
-    this.personaService.getPersona().subscribe(data => {this.persona = data});
+    this.personaService.person().subscribe(data => {
+      this.persona = data;
+  
+    })
+    
+    // this.personaService.getPersona().subscribe(data => {this.persona = data});
     //////////////////////////////////////////////////////////////////////////////
     /* 
     TODO: Esto anda!

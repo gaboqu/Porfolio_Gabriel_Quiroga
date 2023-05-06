@@ -21,7 +21,7 @@ import { NavComponent } from './componentes/nav/nav.component';
  /* 
  TODO: Importo el router para luego definir las vistas con los componetes que se veran */
 import { RouterModule} from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -46,6 +46,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NgxTypedJsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FormsModule,
   
     
 /*  

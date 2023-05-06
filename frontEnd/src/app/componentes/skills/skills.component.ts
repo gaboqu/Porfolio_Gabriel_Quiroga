@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { SkillService } from 'src/app/servicios/skill.service';
 
 
 @Component({
@@ -8,15 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-  skillsList:any;
-//   constructor(private datosPorfolio:PorfolioService){}
 
-//   ngOnInit(): void{
-//     this.datosPorfolio.obtenerDatos().subscribe(data =>{
-// //      console.log(data)
-//       this.skillsList=data.skills; 
-//     });
-//   }
+constructor(private skillService:SkillService){}
+
+skills: any;
+
+  ngOnInit(): void{
+    this.skillService.skil().subscribe((data) => {
+      this.skills = data;
+      console.log(this.skills)
+
+    });
+  }
 
 }
 
