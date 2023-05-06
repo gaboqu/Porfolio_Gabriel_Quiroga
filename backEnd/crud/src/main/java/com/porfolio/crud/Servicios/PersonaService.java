@@ -34,6 +34,8 @@ public class PersonaService {
         persona.setUrl_foto(request.getUrl_foto());
         persona.setEmail(request.getEmail());
         persona.setPassword(request.getPassword());
+        persona.setFrase1(request.getFrase1());
+        persona.setFrase2(request.getFrase2());
         
         return persona;
     }

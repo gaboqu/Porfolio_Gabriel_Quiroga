@@ -8,13 +8,14 @@ import { PersonaService } from 'src/app/servicios/persona.service';
   templateUrl: './encabezado.component.html',
   styleUrls: ['./encabezado.component.css']
 })
-export class EncabezadoComponent{ 
+export class EncabezadoComponent{
+  [x: string]: any; 
   // persona: persona = new persona("", "", "", "","");
 
   constructor(private personaService: PersonaService) { }
 
   persona: any;
-
+  
 
   // name:any; Esto iba
   // miPorfolio:any;
@@ -36,6 +37,10 @@ export class EncabezadoComponent{
       this.persona = data;
   
     })
+
+ 
+
+
     
     // this.personaService.getPersona().subscribe(data => {this.persona = data});
     //////////////////////////////////////////////////////////////////////////////
