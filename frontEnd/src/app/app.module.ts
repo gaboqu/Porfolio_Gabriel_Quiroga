@@ -47,6 +47,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
   
     
 /*  

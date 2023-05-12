@@ -8,6 +8,8 @@ import java.util.Optional;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,17 +26,20 @@ public class ExpController {
     @Autowired
     private ExpService ExpService;
     
+    @CrossOrigin
     @GetMapping
     @ResponseBody
     public ArrayList<ExpModel> getExp(){
         return this.ExpService.getExp();
     }
     
+    @CrossOrigin
     @PostMapping
     public ExpModel saveExp(@RequestBody ExpModel exp){
         return this.ExpService.saveExp(exp);
     }
     
+    @CrossOrigin
      @PutMapping(path = "/{id}")
     public ResponseEntity<ExpModel> putExp(
             @RequestBody ExpModel request,
@@ -50,6 +55,22 @@ public class ExpController {
         ExpService.saveExp(exp.get());
 
         return ResponseEntity.ok(exp.get());
+    }
+    
+    @CrossOrigin
+    @DeleteMapping(path = "/{id}")
+    public ResponseEntity <Boolean> deleteById(@PathVariable("id") Long id) {
+        
+        return ResponseEntity.ok(ExpService.deleteExp(id));
+        
+//        boolean ok = this.ExpService.deleteExp(id);
+//
+//        if (ok) {
+//            return "La experiencia  id " + id + " ha sido borrada!";
+//
+//        } else {
+//            return "La experiencia id " + id + " no existe";
+//        }
     }
     
 }

@@ -16,8 +16,6 @@ skills: any;
   ngOnInit(): void{
     this.skillService.skil().subscribe((data) => {
       this.skills = data;
-      console.log(this.skills)
-
     });
   }
 

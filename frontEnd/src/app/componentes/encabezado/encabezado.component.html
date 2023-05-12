@@ -22,15 +22,16 @@
     <section class="banner">
       <div class="container flex2" id="con">
         <div class="foto">
-          <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div> -->
+          <!-- <div class="btn_edit"><img src="../../../assets/img/btn_editar.png" alt=""></div> -->
           <img 
             [src]="persona[0].url_foto" 
             alt="Foto de perfil" 
           />
-          <!-- <img src="../../../assets/img/perfil_foto.png" alt=""> -->
+         
+          <!-- <img src="../../../assets/img/btn_editar.png" alt=""> -->
         </div>
         <div class="acercaDe top20" id="con2">
-          <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div> -->
+          <div class="btn_editb"><img src="../../../assets/img/btn_editar.png" alt=""></div>
           <h3 class="abs">Hola soy <b>{{persona[0].nombre}}</b></h3>
           <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div>  -->
           <ngx-typed-js [strings]="[persona[0].frase1, persona[0].frase2]"

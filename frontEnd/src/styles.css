@@ -71,7 +71,7 @@
     justify-content: space-around;
   }
   
-  .wrp {
+  .a {
     flex-wrap: wrap;
   }
   
@@ -184,10 +184,11 @@
   }
   /*EXPERIENCIAS*/
   
-  
   .card_exp {
     width: 24%;
-    margin-bottom: 13px;
+    /* min-width: 300px; */
+    margin-bottom: 10px;
+    margin-right: 10px;
     min-height: 350px;
     background-color: #191c32;
     padding: 20px 20px 20px 20px;
@@ -302,6 +303,63 @@
     border: 1px solid #14172a;
     filter: contrast(110%);
   }
+
+.btn_edit{
+  text-align: right;
+  
+}
+
+.btn_edit img{
+  position: absolute;
+  max-width: 20px;
+  right: 50px;
+  top: 0;
+  border-radius: 0%;
+}
+
+.btn_editb{
+  text-align: right;
+  
+}
+
+.btn_editb img{
+  position: absolute;
+  max-width: 20px;
+  right: 10px;
+  top: 0;
+  border-radius: 0%;
+}
+
+.btn_elim{
+  text-align: right;
+  
+}
+
+.btn_elim img{
+  position: absolute;
+  max-width: 20px;
+  right: 15px;
+  top: 0;
+  border-radius: 0%;
+}
+
+.btn_agregar{
+  text-align: right;
+  
+}
+
+.btn_agregar img{
+  max-width: 30px;
+  /* position: absolute;
+  
+  right: 50px;
+  top: 0; */
+  border-radius: 0%;
+}
+
+.contCent {
+  align-content: center;
+}
   
   
   /* FOOTER */
@@ -342,6 +400,20 @@
   padding: 40px;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, .6) ;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 5px;
+  
+}
+
+.contMainUp{
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 1) ;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
   border-radius: 5px;
@@ -618,7 +690,7 @@
     }
   
     .card_exp{
-      width: 90%;
+      width: 24%;
     }
   
     .foto img {
