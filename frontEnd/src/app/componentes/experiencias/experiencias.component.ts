@@ -3,9 +3,6 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { ExpService } from 'src/app/servicios/exp.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-
-
-
 @Component({
   selector: 'app-experiencias',
   templateUrl: './experiencias.component.html',
@@ -52,13 +49,9 @@ export class ExperienciasComponent implements OnInit{
   save(){
      
     const exp = this.formulario.value;  
-    //exp.id=   this.ExpEnEdicion.id;
 
     if (this.ExpEnEdicion) {
       exp.id=   this.ExpEnEdicion.id;
-      // console.log("estoy en el update");
-      // console.log(this.ExpEnEdicion)
-      // const exp = this.formulario.value;   
       this.expService.update( this.ExpEnEdicion.id, exp).subscribe(
         { 
           next: ()  => {
@@ -74,14 +67,10 @@ export class ExperienciasComponent implements OnInit{
             this.ExpEnEdicion= undefined;
             this.modal.dismissAll();
             alert('Se edito con exito...!!!');
-            // console.log("datos del formulario: ", this.formulario.value)
         }, 
         error: () =>{
           this.modal.dismissAll();
           alert('No se pudo editar');
-         
-          // console.log(this.formulario.value)
-          // console.log(exp)
         }
       })
 
