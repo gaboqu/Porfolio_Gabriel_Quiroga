@@ -8,6 +8,7 @@ import java.util.Optional;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,12 +35,14 @@ public class ExpController {
     }
     
     @CrossOrigin
+    @PreAuthorize("hasRole('ADMIN')")  
     @PostMapping
     public ExpModel saveExp(@RequestBody ExpModel exp){
         return this.ExpService.saveExp(exp);
     }
     
     @CrossOrigin
+    @PreAuthorize("hasRole('ADMIN')") 
      @PutMapping(path = "/{id}")
     public ResponseEntity<ExpModel> putExp(
             @RequestBody ExpModel request,
@@ -58,6 +61,7 @@ public class ExpController {
     }
     
     @CrossOrigin
+    @PreAuthorize("hasRole('ADMIN')") 
     @DeleteMapping(path = "/{id}")
     public ResponseEntity <Boolean> deleteById(@PathVariable("id") Long id) {
         

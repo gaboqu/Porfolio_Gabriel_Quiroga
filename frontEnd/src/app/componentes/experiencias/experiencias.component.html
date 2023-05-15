@@ -5,7 +5,7 @@
      
      
       <div class="btn_agregar down30"> <img src="../../../assets/img/btn_crear.png"  type="button"
-        (click)="ModalOpen(contenido) " alt=""></div>
+        (click)="ModalOpen(contenido) " alt="" *ngIf="isLogged" ng-hide="isLogged"></div>
       
     </div>
 
@@ -62,15 +62,15 @@
     </ng-template>
 
 
-    <div class=" ww ">
-      <div *ngFor="let exp of exp" class="card_exp abs">
+    <div class=" ww " >
+      <div  *ngFor="let exp of exp"  class="card_exp abs" >
         <div>
 
           
-          <div class="btn_edit"><img src="../../../assets/img/btn_editar.png" type="button" (click)=" edit(exp.id, contenido)" ></div>
+          <div class="btn_edit"><img src="../../../assets/img/btn_editar.png" type="button" (click)=" edit(exp.id, contenido)" *ngIf="isLogged" ng-hide="isLogged" ></div>
 
           
-          <div class="btn_elim"><img src="../../../assets/img/btn_eliminar.png" type="button" (click)="delete(exp.id)"></div>
+          <div class="btn_elim"><img src="../../../assets/img/btn_eliminar.png" type="button" (click)="delete(exp.id)" *ngIf="isLogged" ng-hide="isLogged"></div>
         </div>
         
         <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div> -->

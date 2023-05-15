@@ -13,7 +13,8 @@
             <li><a href="https://api.whatsapp.com/send?phone=3454013565" target="blank"><img src="assets/img/incon_wapp.png"
                   alt="" /></a></li>
             <li><a href="https://github.com/gaboqu" target="blank"><img src="assets/img/icon_git.png" alt="" /></a></li>
-            <li class="btn_login"><a href="">login</a> </li>
+            <li class="btn_login"><a type="button" (click)="login()" *ngIf="!isLogged">login</a> </li>
+            <li class="btn_login"><a type="button" (click)="onLogOut()" *ngIf="isLogged">logout</a> </li>
           </ul>
         </div>
       </nav>
@@ -31,7 +32,7 @@
           <!-- <img src="../../../assets/img/btn_editar.png" alt=""> -->
         </div>
         <div class="acercaDe top20" id="con2">
-          <div class="btn_editb"><img src="../../../assets/img/btn_editar.png" alt=""></div>
+          <div class="btn_editb"><img src="../../../assets/img/btn_editar.png" alt=""  *ngIf="isLogged" ng-hide="isLogged"></div>
           <h3 class="abs">Hola soy <b>{{persona[0].nombre}}</b></h3>
           <!-- <div class="btn_edit"><img src="img/btn_editar.png" alt=""></div>  -->
           <ngx-typed-js [strings]="[persona[0].frase1, persona[0].frase2]"

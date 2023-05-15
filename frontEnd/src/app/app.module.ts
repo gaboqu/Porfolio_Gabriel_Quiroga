@@ -22,6 +22,7 @@ import { NavComponent } from './componentes/nav/nav.component';
  TODO: Importo el router para luego definir las vistas con los componetes que se veran */
 import { RouterModule} from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { interceptorProvider } from './servicios/interceptor-service';
 
 
 
@@ -57,13 +58,15 @@ TODO:Importo el router y definos las vistas cada una con su path, la que no tien
     RouterModule.forRoot([
       
       {path: 'registro', component: RegistroComponent},
-      {path: 'porfolio', component: BaseComponent},
-      {path: '', component: LoginComponent},
+      {path: '', component: BaseComponent},
+      {path: 'login', component: LoginComponent},
     ]
 
     )
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
